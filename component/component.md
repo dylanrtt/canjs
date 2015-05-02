@@ -17,6 +17,8 @@ This video provides a more in depth overview of the API and goes over several ex
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ogX765S4iuc" frameborder="0" allowfullscreen></iframe>
 
+Note: the videos above reference the `scope` property, which was replaced by the [can.Component::viewModel viewModel] property in 2.2.
+
 @signature `< TAG [ATTR-NAME="{KEY}|ATTR-VALUE"] >`
 
 Create an instance of a component on a particular 
