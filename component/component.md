@@ -9,6 +9,14 @@
 @description Create widgets that use a template, a view-model 
 and custom tags.
 
+Watch this video for an overview of can.Component, why you should use it, and a hello world example:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/BM1Jc3lVUrk" frameborder="0" allowfullscreen></iframe>
+
+This video provides a more in depth overview of the API and goes over several examples of can.Components:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ogX765S4iuc" frameborder="0" allowfullscreen></iframe>
+
 @signature `< TAG [ATTR-NAME="{KEY}|ATTR-VALUE"] >`
 
 Create an instance of a component on a particular 
