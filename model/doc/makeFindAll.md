@@ -7,9 +7,9 @@ Returns the external `findAll` method given the implemented [can.Model.findAllDa
 
 @param {can.Model.findAllData} findAllData
 
-[can.Model.findAll] is implemented with a `String`, [can.AjaxSettings ajax settings object], or
+[can.Model.findAll] is implemented with a `String`, [can.ajax ajax settings object], or
 [can.Model.findAllData findAllData] function. If it is implemented as
-a `String` or [can.AjaxSettings ajax settings object], those values are used
+a `String` or [can.ajax ajax settings object], those values are used
 to create a [can.Model.findAllData findAllData] function.
 
 The [can.Model.findAllData findAllData] function is passed to `makeFindAll`. `makeFindAll`
