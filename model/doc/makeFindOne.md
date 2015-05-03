@@ -1,6 +1,10 @@
 @function can.Model.makeFindOne
 @parent can.Model.static
 
+`makeFindOne` is a hook that lets you define special `findOne` behavior. 
+It is a generator function that lets you return the function that will 
+actually be called when `findOne` is called.
+
 @signature `can.Model.makeFindOne: function(findOneData) -> findOne`
 
 Returns the external `findOne` method given the implemented [can.Model.findOneData findOneData] function.
@@ -23,8 +27,12 @@ Returns function that implements the external API of `findOne`.
 
 ## Use
 
+When a user calls `MyModel.findOne({})`, the function returned by 
+`makeFindOne` will be called. Here you can specify what you want to happen 
+before the real request for data is made. Call the function passed in `findOneData` with `params` to make the AJAX request, or whatever the external request for data normally does.
+
 `makeFindOne` can be used to implement base models that perform special
-behavior. `makeFindOne` is passed a [can.Model.findOneData findOneData] function that retrieves raw
+behavior, like caching, or adding special parameters to the request object. `makeFindOne` is passed a [can.Model.findOneData findOneData] function that retrieves raw
 data. It should return a function that when called, uses
 the findOneData function to get the raw data and convert it to a model instance with
 [can.Model.model model].
